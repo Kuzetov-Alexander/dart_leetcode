@@ -1,4 +1,4 @@
-final List<int> digits = [8, 9, 9, 9];
+final List<int> digits = [9];
 
 class Solution {
   List<int> plusOne(List<int> digits) {
@@ -24,6 +24,7 @@ class Solution {
         digits[i] += 1;
         break;
       } else {
+        //проверка первой цифры в Лист, чтобы сделать так [1,0];
         if (i != 0) {
           digits[i] = 0;
         } else {
